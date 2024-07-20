@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/bookings")
-@CrossOrigin(origins = "http://127.0.0.1:5501")
+@CrossOrigin(origins = "https://bilal-tours.vercel.app")
 public class TourBookingController {
     
 

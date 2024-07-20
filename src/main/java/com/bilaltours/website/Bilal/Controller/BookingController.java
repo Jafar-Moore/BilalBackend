@@ -33,7 +33,7 @@ public class BookingController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @CrossOrigin(origins = "http://127.0.0.1:5501")
+    @CrossOrigin(origins = "https://bilal-tours.vercel.app")
     @PostMapping("/create")
     public AirportBooking createBooking(@RequestBody AirportBooking booking) {
         AirportBooking newBooking = bookingService.createBooking(booking);

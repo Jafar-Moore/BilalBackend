@@ -14,7 +14,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://127.0.0.1:5501"); // Replace with your frontend URL
+        config.addAllowedOrigin("https://bilal-tours.vercel.app"); // Replace with your frontend URL
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/Tourbookings/**", config); // Adjust the path pattern as needed
